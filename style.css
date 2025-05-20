@@ -1,3 +1,107 @@
-p{
-    color:red;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+header {
+    background-color:#101D42;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Logoo {
+    height: 50px;
+    padding-left:40px;
+    padding-right:0px;
+}
+
+.Logo {
+    height: 60px;
+    padding-left:0px;
+    padding-right:40px;
+}
+
+/* Scrolling Pictures Styles */
+.scrolling-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.scrolling-pictures {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    padding:0px;
+}
+
+.scrolling-pictures img {
+    display: inline-block;
+    width: auto;
+    height: 150px; /* Adjust based on your preference */
+    margin-right: 10px; /* Space between images */
+    height: 600px;
+    padding:0px;
+}
+
+/* Keyframes for Scrolling Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%);}
+    padding :0px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Keyframes for Text Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Footer Styles */
+footer {
+    background-color:#101D42;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
